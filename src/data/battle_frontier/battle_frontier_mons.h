@@ -659,10 +659,10 @@ const struct FacilityMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     },
     [FRONTIER_MON_CORSOLA] = { // Corsola-Band (ID: 73)
         .species = SPECIES_CORSOLA,
-        .moves = {MOVE_HEAD_SMASH, MOVE_LIQUIDATION, MOVE_EARTHQUAKE, MOVE_EXPLOSION},
-        .heldItem = ITEM_CHOICE_BAND,
+        .moves = {MOVE_ROLLOUT, MOVE_DEFENSE_CURL, MOVE_AMNESIA, MOVE_RECOVER},
+        .heldItem = ITEM_METRONOME,
         .evSpread = F_EV_SPREAD_ATTACK | F_EV_SPREAD_HP,
-        .nature = NATURE_ADAMANT,
+        .nature = NATURE_IMPISH,
         .ivs = 31,
         .ability = 0
     },
@@ -2153,8 +2153,8 @@ const struct FacilityMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     },
     [FRONTIER_MON_SEAKING_2] = { // Seaking-AV (ID: 239)
         .species = SPECIES_SEAKING,
-        .moves = {MOVE_DIVE, MOVE_MEGAHORN, MOVE_DRILL_RUN, MOVE_KNOCK_OFF},
-        .heldItem = ITEM_ASSAULT_VEST,
+        .moves = {MOVE_DIVE, MOVE_BODY_SLAM, MOVE_BULK_UP, MOVE_KNOCK_OFF},
+        .heldItem = ITEM_LEFTOVERS,
         .evSpread = F_EV_SPREAD_ATTACK | F_EV_SPREAD_HP,
         .nature = NATURE_ADAMANT,
         .ivs = 31,
@@ -2540,7 +2540,7 @@ const struct FacilityMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     },
     [FRONTIER_MON_CRUSTLE_2] = { // Crustle-ShellSmash (ID: 282)
         .species = SPECIES_CRUSTLE,
-        .moves = {MOVE_ROCK_SLIDE, MOVE_X_SCISSOR, MOVE_EARTHQUAKE, MOVE_SHELL_SMASH},
+        .moves = {MOVE_ROCK_SLIDE, MOVE_LEECH_LIFE, MOVE_EARTHQUAKE, MOVE_SHELL_SMASH},
         .heldItem = ITEM_WHITE_HERB,
         .evSpread = F_EV_SPREAD_SPEED | F_EV_SPREAD_ATTACK,
         .nature = NATURE_ADAMANT,
@@ -2954,12 +2954,12 @@ const struct FacilityMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     },
     [FRONTIER_MON_HYPNO_1] = { // Hypno-BD (ID: 430)
         .species = SPECIES_HYPNO,
-        .moves = {MOVE_ZEN_HEADBUTT, MOVE_DRAIN_PUNCH, MOVE_HYPNOSIS, MOVE_BELLY_DRUM},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .evSpread = F_EV_SPREAD_SPEED | F_EV_SPREAD_ATTACK,
-        .nature = NATURE_JOLLY,
+        .moves = {MOVE_ZEN_HEADBUTT, MOVE_DRAIN_PUNCH, MOVE_HYPNOSIS, MOVE_BULK_UP},
+        .heldItem = ITEM_LEFTOVERS,
+        .evSpread = F_EV_SPREAD_HP | F_EV_SPREAD_ATTACK,
+        .nature = NATURE_ADAMANT,
         .ivs = 31,
-        .ability = 0
+        .ability = 1
     },
     [FRONTIER_MON_GOLEM_1] = { // Golem-Sucker (ID: 329)
         .species = SPECIES_GOLEM,
@@ -4790,10 +4790,10 @@ const struct FacilityMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     },
     [FRONTIER_MON_HYPNO_2] = { // Hypno-NP (ID: 634)
         .species = SPECIES_HYPNO,
-        .moves = {MOVE_PSYCHIC, MOVE_FOCUS_BLAST, MOVE_SHADOW_BALL, MOVE_NASTY_PLOT},
-        .heldItem = ITEM_LEFTOVERS,
-        .evSpread = F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_HP,
-        .nature = NATURE_MODEST,
+        .moves = {MOVE_ZEN_HEADBUTT, MOVE_DIZZY_PUNCH, MOVE_EARTHQUAKE, MOVE_DRAIN_PUNCH},
+        .heldItem = ITEM_CHOICE_BAND,
+        .evSpread = F_EV_SPREAD_ATTACK | F_EV_SPREAD_HP,
+        .nature = NATURE_ADAMANT,
         .ivs = 31,
         .ability = 0
     },
@@ -9069,6 +9069,15 @@ const struct FacilityMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .evSpread = F_EV_SPREAD_ATTACK | F_EV_SPREAD_HP,
         .nature = NATURE_ADAMANT,
+        .ivs = 31,
+        .ability = 0
+    },
+    [FRONTIER_MON_CORSOLA_SIMPLE_CURSE] = { // (id 1020)
+        .species = SPECIES_CORSOLA,
+        .moves = {MOVE_HORN_LEECH, MOVE_STONE_EDGE, MOVE_CURSE, MOVE_RECOVER},
+        .heldItem = ITEM_LIFE_ORB,
+        .evSpread = F_EV_SPREAD_HP | F_EV_SPREAD_SP_DEFENSE,
+        .nature = NATURE_CAREFUL,
         .ivs = 31,
         .ability = 0
     }
